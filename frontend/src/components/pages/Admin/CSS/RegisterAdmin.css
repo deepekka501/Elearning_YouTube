@@ -1,0 +1,122 @@
+/* Overall Container */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Form Wrapper */
+  .signup-form-container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Left Side */
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #764ba2;
+    padding: 20px;
+    color: white;
+  }
+  
+  .left h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .white-btn {
+    padding: 10px 20px;
+    background: white;
+    color: #764ba2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .white-btn:hover {
+    background: #f3e7ff;
+  }
+  
+  /* Right Side */
+  .right {
+    flex: 2;
+    padding: 40px 30px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  /* Input Fields */
+  .input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .input:focus {
+    border-color: #764ba2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(118, 75, 162, 0.3);
+  }
+  
+  /* Error Message */
+  .error-msg {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+  
+  /* Submit Button */
+  .green-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #764ba2;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .green-btn:hover {
+    background-color: #667eea;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .signup-form-container {
+      flex-direction: column;
+    }
+  
+    .left {
+      padding: 20px 10px;
+    }
+  
+    .right {
+      padding: 20px 10px;
+    }
+  }
+  
